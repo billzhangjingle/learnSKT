@@ -24,7 +24,8 @@ int main(void)
 	struct sockaddr_in addrin;
 	addrin.sin_family = AF_INET;
 	addrin.sin_port = htons(8001);//把一个短整型的本地字节序转成网络字节序   通过man可查到相关信息
-	addrin.sin_addr.s_addr = inet_addr("127.0.0.1");
+	//addrin.sin_addr.s_addr = inet_addr("127.0.0.1");
+	addrin.sin_addr.s_addr = inet_addr("192.168.244.128");
 	
 	
 	if(bind(skdstor, (const struct sockaddr *)&addrin,  sizeof(addrin)) == -1){

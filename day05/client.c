@@ -31,7 +31,7 @@ int main(void)
 	srvaddr.sin_port = htons(8001);
 	srvaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 		
-	//连接
+
 	if ( connect(sockfd, (struct sockaddr*) (&srvaddr), sizeof(srvaddr)) < 0)
 	{
 		perror("fun socket\n");

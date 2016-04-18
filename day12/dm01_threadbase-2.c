@@ -79,7 +79,7 @@ int main()
 	{
 		printf("A");
 		fflush(stdout);
-	}
+	}ss
 	sleep(1);
 	pthread_cancel(tid);
 	
