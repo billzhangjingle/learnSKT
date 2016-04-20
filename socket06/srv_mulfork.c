@@ -41,7 +41,7 @@ int main(void)
 	struct sockaddr_in myaddr;
 	myaddr.sin_family  =  AF_INET;
 	myaddr.sin_port   =  htons(8001);
-	inet_aton("192.168.244.128", &myaddr.sin_addr); 
+	inet_aton("127.0.0.1", &myaddr.sin_addr); 
 	
 	//添加地址复用的功能
 	int optval = 1;
