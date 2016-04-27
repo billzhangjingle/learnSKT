@@ -28,7 +28,6 @@ int main(void)
 	//addrin.sin_addr.s_addr = inet_addr("192.168.244.128");
 	
 	
-	
 	int optval = 1;
 	if (setsockopt(skdstor, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof(optval)) < 0)
 	{
@@ -36,7 +35,7 @@ int main(void)
 		exit(0);
 	}
 	
-	
+	//°ó¶¨¶Ë¿Ú
 	if(bind(skdstor, (const struct sockaddr *)&addrin,  sizeof(addrin)) == -1){
 		perror("fun bind\n");
 		exit(0);
